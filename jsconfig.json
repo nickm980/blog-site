@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/layout/*": ["components/Layout/*"],
+      "@/images/*": ["public/images/*"]
+    }
+  }
+}

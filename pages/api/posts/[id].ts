@@ -13,15 +13,20 @@ export default async function handler(req, res) {
     return;
   }
 
-  const postId = await parseInt(id);
-  console.log(postId);
+  if (req.method == "GET") {
+    const postId = await parseInt(id);
+    console.log(postId);
+    console.log(req.query);
 
-  const post: Post = await prisma.post.findUnique({
-    where: {
-      id: postId,
-    },
-  });
+    const post: Post = await prisma.post.findUnique({
+      where: {
+        id: postId,
+      },
+    });
 
-  console.log(post);
-  res.status(200).send(post);
+    console.log(post);
+    res.status(200).send(post);
+  } else {
+    res.status(400).send({ message: "Only get requests allowed!" });
+  }
 }

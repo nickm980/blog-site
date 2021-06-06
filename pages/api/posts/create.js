@@ -1,3 +1,5 @@
+import prisma from "@prisma/client";
+
 export default (req, res) => {
   if (req.method !== "POST") {
     res.status(400).send({ message: "Only POST requests allowed" });

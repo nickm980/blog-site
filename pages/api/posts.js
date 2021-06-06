@@ -1,5 +1,10 @@
-export default (req, res) => {
-  const { id } = req.query;
+import prisma from "lib/prisma";
 
-  res.status(200).json({ name: "post" + `${id}` });
+export default (req, res) => {
+  const posts = prisma.post.findMany({
+    take: 10,
+  });
+
+  console.log(posts);
+  res.status(200).send(posts);
 };

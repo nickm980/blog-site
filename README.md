@@ -50,4 +50,4 @@ npm run dev
 
 
 ## License
-[MIT License](https://github.com/nickm980/blog-site/blob/main/LICENSE)
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/nickm980/blog-site/blob/main/LICENSE) file for details

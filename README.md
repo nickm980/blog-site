@@ -8,7 +8,10 @@ git clone https://github.com/nickm980/blog-site.git
 cd my-project
 ```
 
-Install the dependencies using either ```npm install``` or ``` yarn install ```
+Install the dependencies using either 
+```npm install``` 
+Or if you are using yarn
+``` yarn install ```
 
 Run the project (by default, the project runs on https://localhost:3000/)
 

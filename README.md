@@ -28,7 +28,7 @@ prisma generate
 4. Run the project (by default, the project runs on https://localhost:3000/)
 
 ```
-npm run start
+npm run dev
 ```
 
 ## License

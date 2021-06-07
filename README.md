@@ -1,5 +1,11 @@
 # Blog-site
-A blogging site developed with nextjs
+A blogging site developed with nextjs using server side rendering. 
+
+## Features
+
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 ## Quick Start
 

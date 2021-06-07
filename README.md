@@ -41,11 +41,11 @@ npm run dev
 ## NPM Scripts
 | Command | Description |
 | --- | --- |
-| npm run dev | Hosts the development site |
-| npm run start | Starts the site for production |
-| npm run build | Builds the site |
-| npm run prisma | Opens the prisma manager |
-| npm run pdev | Opens the prisma manager and the development site |
+| `npm run dev` | Hosts the development site |
+| `npm run start` | Starts the site for production |
+| `npm run build` | Builds the site |
+| `npm run prisma` | Opens the prisma manager |
+| `npm run pdev` | Opens the prisma manager and the development site |
 
 
 ## License

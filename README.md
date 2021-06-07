@@ -6,7 +6,6 @@ A blogging site developed with nextjs
 1. Clone this repo into new project folder (e.g., my-project)
 ```
 git clone https://github.com/nickm980/blog-site.git
-cd my-project
 ```
 
 2. Install the dependencies using either 

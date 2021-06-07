@@ -25,3 +25,6 @@ yarn install
 ```
 npm run start
 ```
+
+## License
+[Mit License](https://github.com/nickm980/blog-site/blob/main/LICENSE)

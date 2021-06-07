@@ -32,4 +32,4 @@ npm run dev
 ```
 
 ## License
-[Mit License](https://github.com/nickm980/blog-site/blob/main/LICENSE)
+[MIT License](https://github.com/nickm980/blog-site/blob/main/LICENSE)

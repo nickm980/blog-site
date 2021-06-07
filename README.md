@@ -20,7 +20,12 @@ Or if you are using yarn
 yarn install 
 ```
 
-3. Run the project (by default, the project runs on https://localhost:3000/)
+3. Generate the prisma database
+```
+prisma generate
+```
+
+4. Run the project (by default, the project runs on https://localhost:3000/)
 
 ```
 npm run start

@@ -13,3 +13,5 @@ Install the dependencies and run the project on https://localhost:3000/
 npm install
 npm start
 ```
+
+Or if you are using yarn ``` yarn install ```

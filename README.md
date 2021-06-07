@@ -1,7 +1,7 @@
-## Blog-site
+# Blog-site
 A blogging site developed with nextjs
 
-# Quick Start
+## Quick Start
 Clone this repo into new project folder (e.g., my-project)
 ```
 git clone https://github.com/nickm980/blog-site.git

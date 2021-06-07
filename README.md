@@ -3,7 +3,7 @@ A blogging site developed with nextjs
 
 ## Quick Start
 
-1. Clone this repo into new project folder (e.g., my-project)
+1. Clone this repo into new project folder
 ```
 git clone https://github.com/nickm980/blog-site.git
 ```

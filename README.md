@@ -9,8 +9,11 @@ cd my-project
 ```
 
 Install the dependencies using either 
+
 ```npm install``` 
+
 Or if you are using yarn
+
 ``` yarn install ```
 
 Run the project (by default, the project runs on https://localhost:3000/)

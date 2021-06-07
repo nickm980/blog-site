@@ -1,12 +1,14 @@
 import prisma from "lib/prisma";
 import DOMPurify from "isomorphic-dompurify";
 
+export async function getPosts() {
+  const posts = await prisma.post.findMany();
+  return posts;
+}
+
 export default async function handler(req, res) {
   if (req.method == "GET") {
-    const posts = await prisma.post.findMany();
-
-    console.log(posts);
-    res.status(200).send(posts);
+    res.status(200).send(getPosts());
     return;
   }
 

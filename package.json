@@ -9,6 +9,7 @@
     "build": "next build",
     "start": "next start"
   },
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@prisma/client": "^2.24.1",
     "isomorphic-dompurify": "^0.14.0",

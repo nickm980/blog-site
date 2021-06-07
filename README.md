@@ -3,6 +3,7 @@ A blogging site developed with nextjs using server side rendering.
 
 ## Features
 
+| First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |

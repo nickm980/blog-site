@@ -1,5 +1,5 @@
 # Blog-site
-A blogging site developed with nextjs using server side rendering. 
+A blogging site developed with nextjs using server side rendering. Markdown is supported.
 
 ## Features
 

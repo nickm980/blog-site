@@ -4,10 +4,12 @@ A blogging site developed with nextjs using server side rendering. Markdown is s
 ## Features
 
 - SEO ready
-- Responsive
+- Responsive 
 - UI Components
 - User Authentication
 - Reccomendations
+- Markdown support
+- Skeleton loading
 
 ## Quick Start
 

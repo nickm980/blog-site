@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 .article {
     border: 1px solid black;
 }
+=======
+.rightside {
+
+}
+
+.leftside {
+  text-overflow: elipsis;
+}
+>>>>>>> 7480f83e87b5c5ad070db35c0c0514d1f6606b2b

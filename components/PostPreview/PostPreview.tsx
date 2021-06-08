@@ -6,7 +6,7 @@ export default function PostPreview(props) {
   const post: Post = props.post;
 
   return (
-    <article>
+    <article className={styles.article}>
       <h2>{post.title}</h2>
       <p>{post.description}</p>
     </article>

@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import DOMPurify from "isomorphic-dompurify";
 import { findPost } from "pages/api/posts/[id]";
 import { getPosts } from "pages/api/posts";
+import { PostPreview } from "components";
+import { isPropertySignature } from "typescript";
 
 // export async function getStaticPaths() {
 //   const posts = await getPosts();
@@ -36,7 +38,7 @@ export default function Post(props) {
   return (
     <div>
       {props.postList.id}
-      <div>a</div>
+      <PostPreview post={props.postList}></PostPreview>
     </div>
   );
 }

@@ -10,6 +10,7 @@ export default function PostPreview(props) {
       <div className={styles.leftside}>
         <h1>{post.title}</h1>
         <p>{post.description}</p>
+        <p>{user.firstName}</p>
       </div>
       <div className={styles.rightside}></div>
     </article>

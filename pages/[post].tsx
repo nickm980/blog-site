@@ -2,6 +2,7 @@ import * as stringutils from "lib/stringutils";
 import { useRouter } from "next/router";
 import DOMPurify from "isomorphic-dompurify";
 import { findPost } from "pages/api/posts/[id]";
+import { findUser } from "pages/api/users/[id]";
 import { getPosts } from "pages/api/posts";
 import { PostPreview } from "components";
 import { isPropertySignature } from "typescript";
@@ -25,10 +26,11 @@ import { isPropertySignature } from "typescript";
 //Expect a lot of blog posts
 export async function getServerSideProps({ params }) {
   const posts = await findPost(params.post);
-
+  const user = await findUser(params.post.authorId);
   return {
     props: {
       postList: posts,
+      user: user,
     },
   };
 }

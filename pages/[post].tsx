@@ -6,6 +6,7 @@ import { findUser } from "pages/api/users/[id]";
 import { getPosts } from "pages/api/posts";
 import { PostPreview } from "components";
 import { isPropertySignature } from "typescript";
+import { Post, User } from ".prisma/client";
 
 // export async function getStaticPaths() {
 //   const posts = await getPosts();
@@ -25,22 +26,22 @@ import { isPropertySignature } from "typescript";
 
 //Expect a lot of blog posts
 export async function getServerSideProps({ params }) {
-  const posts = await findPost(params.post);
-  const user = await findUser(params.post.authorId);
+  const post: Post = await findPost(params.post);
+  const user: User = await findUser(post.authorId);
+
   return {
     props: {
-      postList: posts,
+      post: post,
       user: user,
     },
   };
 }
 
-export default function Post(props) {
-  console.log("getStaticProps- " + props);
+export default function PostView(props) {
   return (
     <div>
-      {props.postList.id}
-      <PostPreview post={props.postList}></PostPreview>
+      {props.post.id}
+      <PostPreview post={props.post} user={props.user}></PostPreview>
     </div>
   );
 }

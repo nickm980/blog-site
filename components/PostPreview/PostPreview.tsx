@@ -7,8 +7,13 @@ export default function PostPreview(props) {
 
   return (
     <article>
-      <h2>{post.title}</h2>
-      <p>{post.description}</p>
+      <div className={styles.leftside}>
+        <h1>{post.title}</h1>
+        <p>{post.description}</p>
+      </div>
+      <div className={styles.rightside}>
+        //<Image src={post.src}</Image>
+      </div>
     </article>
   );
 }

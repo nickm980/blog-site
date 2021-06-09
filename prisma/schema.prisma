@@ -21,9 +21,12 @@ model User {
 }
 
 model Post {
-  id          Int    @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   title       String
   description String
+  content     String
+  splashImage String
+  date        DateTime @default(now())
   authorId    String
-  author      User   @relation(fields: [authorId], references: [id])
+  author      User     @relation(fields: [authorId], references: [id])
 }

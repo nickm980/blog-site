@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 10px;
+}

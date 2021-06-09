@@ -1,3 +1,7 @@
+import Image from "next/image";
+import styles from "./SplashImage.module.css";
+
 export default function SplashImage(props) {
-  return <Image width="500" height="500" src={props.src}></Image>;
+  console.log(props.src);
+  return <img className={styles.img} src={props.src}></img>;
 }

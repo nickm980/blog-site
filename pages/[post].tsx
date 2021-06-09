@@ -4,10 +4,9 @@ import DOMPurify from "isomorphic-dompurify";
 import { findPost } from "pages/api/posts/[id]";
 import { findUser } from "pages/api/users/[id]";
 import { getPosts } from "pages/api/posts";
-import { PostPreview } from "components";
 import { isPropertySignature } from "typescript";
 import { Post, User } from ".prisma/client";
-import { PostContent } from "components";
+import { PostContainer, PostContent, PostPreview } from "components";
 
 // export async function getStaticPaths() {
 //   const posts = await getPosts();
@@ -30,6 +29,7 @@ export async function getServerSideProps({ params }) {
   const post: Post = await findPost(params.post);
 
   let id = null;
+  let text = null;
 
   if (post != null) {
     id = post.authorId;
@@ -51,9 +51,10 @@ export default function PostView(props) {
   }
 
   return (
-    <div>
-      <PostContent post={props.post}></PostContent>
+    <PostContainer>
+      <PostContent post={props.post} user={props.user}></PostContent>
       <PostPreview post={props.post} user={props.user}></PostPreview>
-    </div>
+      <PostPreview post={props.post} user={props.user}></PostPreview>
+    </PostContainer>
   );
 }

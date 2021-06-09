@@ -1,6 +1,8 @@
 # Blog-site
 A blogging site developed with nextjs using server side rendering. Markdown is supported.
 
+![blogsite](https://user-images.githubusercontent.com/81270095/121437806-d438f000-c950-11eb-9e2a-6792f6095b93.png)
+
 ## Features
 
 - SEO ready

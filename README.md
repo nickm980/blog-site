@@ -1,4 +1,4 @@
-# Blog-site
+# Blog-site (Work In Progress)
 A blogging site developed with nextjs using server side rendering. Markdown is supported.
 
 ![blogsite2](https://user-images.githubusercontent.com/81270095/121437856-ee72ce00-c950-11eb-9d9a-22be2c342201.png)

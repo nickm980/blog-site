@@ -27,7 +27,14 @@ import { Post, User } from ".prisma/client";
 //Expect a lot of blog posts
 export async function getServerSideProps({ params }) {
   const post: Post = await findPost(params.post);
-  const user: User = await findUser(post.authorId);
+
+  let id = null;
+
+  if (post != null) {
+    id = post.authorId;
+  }
+
+  const user: User = await findUser(id);
 
   return {
     props: {
@@ -38,9 +45,12 @@ export async function getServerSideProps({ params }) {
 }
 
 export default function PostView(props) {
+  if (props.post == null || props.user == null) {
+    return <div>Not found</div>;
+  }
+
   return (
     <div>
-      {props.post.id}
       <PostPreview post={props.post} user={props.user}></PostPreview>
     </div>
   );

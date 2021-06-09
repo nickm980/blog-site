@@ -2,6 +2,8 @@ import { User } from "@prisma/client";
 import prisma from "lib/prisma";
 
 export async function findUser(id: string) {
+  if (id == null) return null;
+
   const user: User = await prisma.user.findUnique({
     where: {
       id: id,

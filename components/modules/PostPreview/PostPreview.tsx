@@ -1,4 +1,4 @@
-import styles from "components/PostPreview/PostPreview.module.css";
+import styles from "./PostPreview.module.css";
 import { Post, User } from "@prisma/client";
 
 export default function PostPreview(props) {
@@ -6,7 +6,7 @@ export default function PostPreview(props) {
   const post: Post = props.post;
 
   return (
-    <article>
+    <article className={styles.article}>
       <div className={styles.leftside}>
         <h1>{post.title}</h1>
         <p>{post.description}</p>

@@ -12,13 +12,14 @@ export default function PostContent(props) {
   const convertor = new showdown.Converter();
   const text = post.content;
 
+  console.log("Created: " + post.createdAt);
   return (
     <div>
       <h1>{post.title}</h1>
       <p>{post.description}</p>
       <div>
         <SmallProfile user={props.user}></SmallProfile>
-        <DateTime day={post.date.getDay}></DateTime>
+        <DateTime createdAt={post.createdAt}></DateTime>
       </div>
 
       <SplashImage src={post.splashImage}></SplashImage>

@@ -1,0 +1,8 @@
+.span {
+  margin-left: 3%;
+  background-color: lightblue;
+}
+
+.span:hover {
+  cursor: pointer;
+}

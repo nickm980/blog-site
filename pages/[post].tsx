@@ -6,7 +6,14 @@ import { findUser } from "pages/api/users/[id]";
 import { getPosts } from "pages/api/posts";
 import { isPropertySignature } from "typescript";
 import { Post, User } from ".prisma/client";
-import { PostContainer, PostContent, PostPreview } from "components";
+import {
+  Footer,
+  Logo,
+  PostContainer,
+  PostContent,
+  PostPreviewBox,
+  PreviewContainer,
+} from "components";
 
 // export async function getStaticPaths() {
 //   const posts = await getPosts();
@@ -51,10 +58,17 @@ export default function PostView(props) {
   }
 
   return (
-    <PostContainer>
-      <PostContent post={props.post} user={props.user}></PostContent>
-      <PostPreview post={props.post} user={props.user}></PostPreview>
-      <PostPreview post={props.post} user={props.user}></PostPreview>
-    </PostContainer>
+    <div>
+      <Logo></Logo>
+      <PostContainer>
+        <PostContent post={props.post} user={props.user}></PostContent>
+      </PostContainer>
+
+      <PreviewContainer>
+        <PostPreviewBox post={props.post} user={props.user}></PostPreviewBox>
+        <PostPreviewBox post={props.post} user={props.user}></PostPreviewBox>
+      </PreviewContainer>
+      <Footer></Footer>
+    </div>
   );
 }

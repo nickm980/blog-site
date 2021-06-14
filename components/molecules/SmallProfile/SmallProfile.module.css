@@ -1,16 +1,20 @@
 .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.inline {
-    display: inline-block;
+.nameAndDateContainer {
+  display: inline-block;
+  line-height: 0.25em;
+  font-size: 0.8em;
 }
 
 .avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    display: inline-block;
-    margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  border: 1px solid black;
+
+  margin-right: 10px;
 }

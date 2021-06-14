@@ -1,4 +1,4 @@
-import styles from "components/Post/Post.module.css";
+import styles from "./PostContent.module.css";
 import { SplashImage } from "components";
 import showdown from "showdown";
 import DOMPurify from "isomorphic-dompurify";
@@ -12,14 +12,16 @@ export default function PostContent(props) {
   const convertor = new showdown.Converter();
   const text = post.content;
 
-  console.log("Created: " + post.createdAt);
   return (
     <div>
-      <h1>{post.title}</h1>
+      <h1 className={styles.title}>{post.title}</h1>
       <p>{post.description}</p>
-      <div>
-        <SmallProfile user={props.user}></SmallProfile>
-        <DateTime createdAt={post.createdAt}></DateTime>
+      <div className={styles.information}>
+        <SmallProfile
+          className={styles.smallprofile}
+          user={props.user}
+          createdAt={post.createdAt}
+        ></SmallProfile>
       </div>
 
       <SplashImage src={post.splashImage}></SplashImage>

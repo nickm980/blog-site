@@ -1,0 +1,11 @@
+:root {
+  font-size: 1.25rem;
+}
+
+#app {
+  background-color: green;
+}
+
+a {
+  text-decoration: none;
+}

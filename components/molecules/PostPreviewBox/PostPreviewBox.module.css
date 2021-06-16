@@ -1,5 +1,4 @@
 .article {
-  display: flex;
   max-width: 33%;
   margin: 5px;
 }
@@ -10,4 +9,10 @@
   height: 190px;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 690px) {
+  .article {
+    max-width: 100%;
+  }
 }

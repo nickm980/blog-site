@@ -1,16 +1,15 @@
-.smallprofile {
-
+.splashImage {
+  padding-top: 130px;
 }
 
 .datetime {
-    padding-left: 20px;
-    border: 1px solid black;
+  padding-left: 20px;
+  border: 1px solid black;
 }
 .information {
-    display: flex;
+  display: flex;
 }
 
-
 .title {
-    font-size: 3rem;
+  font-size: 3rem;
 }

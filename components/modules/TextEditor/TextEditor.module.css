@@ -1,0 +1,7 @@
+.title {
+  width: 100%;
+  color: #22194d;
+}
+.title:focus {
+  outline: none;
+}

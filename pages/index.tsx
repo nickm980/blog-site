@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Post, PrismaClient, User } from "@prisma/client";
-import { PostPreviewBox, RecentPosts } from "components";
+import { LargePostPreviewBox, RecentPosts, Logo } from "components";
 import { findUser } from "pages/api/users/[id]";
 
 const prisma = new PrismaClient();
@@ -31,7 +31,17 @@ export default function Home(props) {
   const posts = props.posts;
 
   if (posts != null) {
-    return <RecentPosts posts={props.posts} users={props.users}></RecentPosts>;
+    return (
+      <div>
+        <Logo></Logo>
+
+        <LargePostPreviewBox
+          post={props.posts[0]}
+          user={props.users[0]}
+        ></LargePostPreviewBox>
+        <RecentPosts posts={props.posts} users={props.users}></RecentPosts>
+      </div>
+    );
   } else {
     return <div>User Not Found</div>;
   }

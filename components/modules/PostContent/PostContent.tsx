@@ -26,6 +26,13 @@ export default function PostContent(props) {
 
       <SplashImage src={post.splashImage}></SplashImage>
       <div dangerouslySetInnerHTML={{ __html: convertor.makeHtml(text) }}></div>
+      <button
+        onClick={() => {
+          alert("hello world");
+        }}
+      >
+        Hello Application
+      </button>
     </div>
   );
 }

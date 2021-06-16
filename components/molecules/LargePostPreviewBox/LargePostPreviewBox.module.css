@@ -1,0 +1,41 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.containerChild {
+  display: flex;
+}
+
+.splashImage {
+  max-width: 70%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 40px;
+  display: block;
+}
+
+.inline {
+  border: 3px solid purple;
+}
+
+@media (max-width: 690px) {
+  .containerChild {
+    flex-wrap: wrap;
+  }
+
+  .splashImage {
+    max-width: 100%;
+  }
+}
+
+.imageContainer {
+  border: 1px solid green;
+}
+
+.profile {
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+}

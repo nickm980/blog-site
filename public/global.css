@@ -1,5 +1,15 @@
 :root {
   font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  /*margin: 0;*/
+}
+
+.jodit-container p {
+  margin: 0 !important;
 }
 
 #app {
@@ -8,4 +18,5 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }

@@ -10,12 +10,12 @@ export default function PostPreviewBox(props) {
 
   return (
     <article className={styles.article}>
-      <div>
+      <a href={post.id + " "}>
         <img className={styles.splashImage} src={post.splashImage}></img>
         <h1>{post.title}</h1>
         <p>{post.description}</p>
         <SmallProfile user={user}></SmallProfile>
-      </div>
+      </a>
     </article>
   );
 }

@@ -1,5 +1,6 @@
 # Blog-site (Work In Progress)
 A blogging site developed with nextjs using server side rendering. Markdown is supported.
+![text area](https://user-images.githubusercontent.com/81270095/122251053-2c637b00-ce98-11eb-8733-af2dea131a9d.png)
 
 ![blogsitefixed](https://user-images.githubusercontent.com/81270095/121460732-75d53700-c97b-11eb-9d25-da0a65fbd6de.png)
 
@@ -10,7 +11,7 @@ A blogging site developed with nextjs using server side rendering. Markdown is s
 - UI Components
 - User Authentication
 - Reccomendations
-- Markdown support
+- Markdown support and create posts with text editor
 - Skeleton loading
 
 ## Quick Start

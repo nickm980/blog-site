@@ -10,7 +10,7 @@ A blogging site developed with nextjs using server side rendering. Markdown is s
 - UI Components
 - User Authentication
 - Reccomendations
-- Markdown support
+- Markdown support and create posts
 - Skeleton loading
 
 ## Quick Start

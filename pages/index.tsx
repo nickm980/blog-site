@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
 import { Post, PrismaClient, User } from "@prisma/client";
 import { LargePostPreviewBox, RecentPosts, Logo } from "components";
 import { findUser } from "pages/api/users/[id]";

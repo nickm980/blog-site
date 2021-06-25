@@ -10,6 +10,5 @@ export { default as LargePostPreviewBox } from "./molecules/LargePostPreviewBox/
 
 export { default as PreviewContainer } from "./molecules/PreviewContainer/PreviewContainer";
 export { default as RecentPosts } from "./modules/RecentPosts/RecentPosts";
-export { default as TextEditor } from "./modules/TextEditor/TextEditor";
 export { default as EditorContainer } from "./molecules/EditorContainer/EditorContainer";
 export { default as Button } from "./atoms/Button/Button";

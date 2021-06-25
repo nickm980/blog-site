@@ -17,13 +17,15 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "experimentalDecorators": true
+
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/modules/TextEditor/TextEditor.jsx", "components/atoms/SplashImage/SplashImage.js", "pages/[post].js"  ],
   "exclude": [
     "node_modules"
   ]

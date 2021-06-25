@@ -12,7 +12,6 @@
   "proxy": "http://localhost:3000",
   "dependencies": {
     "@prisma/client": "^2.24.1",
-    "axios": "^0.21.1",
     "isomorphic-dompurify": "^0.14.0",
     "jodit-react": "^1.1.1",
     "next": "10.2.3",
